@@ -63,3 +63,9 @@ requires a bit more computational work than just processing what you sent (input
 
 ## Context
 
+
+| Feature | System Prompt | User Prompt |
+| --- | --- | --- |
+| Who Writes It? | The application developers (e.g., Cursor) or you via global settings (`.cursorrules`). | You, dynamically, in the chat box or inline edit block. |
+| When is it Applied? | It is injects invisibly at the very beginning of every single session or request. | It changes with every message you send. |
+| Purpose | Sets the AI's persona, formatting rules, restrictions, and core coding standards. | Demands a specific, immediate action (e.g., "Fix this bug", "Write a test").|
