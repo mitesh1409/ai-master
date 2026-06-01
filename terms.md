@@ -63,6 +63,17 @@ requires a bit more computational work than just processing what you sent (input
 
 ## Context
 
+**The Architecture of Context**  
+
+When you interact with an AI tool like Cursor, the full "context" sent to the model looks like this:  
+
+* System Prompt: The foundational instructions, rules, and behavioral constraints (the "ground rules").
+
+* User Prompt: The specific question or task you just typed.
+
+* Conversation History / Code Files: The surrounding details (your previous messages, open files, linter errors) that give concrete background.
+
+**System Prompt vs. User Prompt**  
 
 | Feature | System Prompt | User Prompt |
 | --- | --- | --- |
