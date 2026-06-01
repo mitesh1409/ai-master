@@ -80,3 +80,44 @@ When you interact with an AI tool like Cursor, the full "context" sent to the mo
 | Who Writes It? | The application developers (e.g., Cursor) or you via global settings (`.cursorrules`). | You, dynamically, in the chat box or inline edit block. |
 | When is it Applied? | It is injects invisibly at the very beginning of every single session or request. | It changes with every message you send. |
 | Purpose | Sets the AI's persona, formatting rules, restrictions, and core coding standards. | Demands a specific, immediate action (e.g., "Fix this bug", "Write a test").|
+
+## Tool Calling
+
+**How tool calling works**  
+
+When developers build AI applications, they can define specific "tools" that the AI model can use. These tools are like special abilities that extend what the model can do beyond just thinking and responding with text.
+
+When you ask ChatGPT to generate an image, search the web, or run code, it's using tools behind the scenes.
+
+Here's what happens under the hood:  
+
+1. The AI model receives your request and recognizes it needs additional capabilities
+2. It formats a special response in JSON (a structured data format) that specifies which tool to use and what parameters to pass
+3. The application runs that tool and returns the results
+4. The AI model incorporates those results into its context and continues the conversation
+
+**What's inside a tool call?**  
+
+Every tool has three main components:
+
+1. A name like read_file or search_web  
+2. A description that tells the model when and how to use the tool
+3. Parameters which are the inputs the tool needs to work
+
+Here's an example of what a tool definition might look like:  
+
+```json
+{
+  "name": "read_file",
+  "description": "Read the contents of a file from the codebase",
+  "parameters": {
+    "filepath": "The path to the file to read"
+  }
+}
+```
+
+## MCP (Model Context Protocol)
+
+Recently, a new standard called MCP (Model Context Protocol) was created. Think of it as a universal way for AI models to use and integrate tools across applications.
+
+Just like how USB became a standard for connecting devices to computers, MCP aims to be a standard for connecting tools to AI models. This means developers can build tools once and have them work across many different AI apps.
