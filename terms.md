@@ -123,3 +123,19 @@ Here's an example of what a tool definition might look like:
 Recently, a new standard called MCP (Model Context Protocol) was created. Think of it as a universal way for AI models to use and integrate tools across applications.
 
 Just like how USB became a standard for connecting devices to computers, MCP aims to be a standard for connecting tools to AI models. This means developers can build tools once and have them work across many different AI apps.
+
+## Agents
+
+At its core, an agent is simply **tools in a loop**.
+
+Think of it like this: instead of you having to tell the AI what to do step by step, you give it a goal and let it figure out the steps itself. It's the difference between giving someone turn-by-turn directions versus just telling them the destination (goal) and letting them use GPS (as a tool).
+
+## Agent Harness
+
+An AI harness (or agent harness) refers to the supporting framework, prompt system, and orchestration surrounding a core language model to help it execute complex tasks.
+
+Cursor is an AI editor with a built-in coding agent. The agent runs inside what's called a "harness," which is made up of three things:
+
+1. Instructions: The system prompt and rules that guide behavior
+2. Tools: File editing, codebase search, terminal execution, and more
+3. Model: The agent model you pick for the task
