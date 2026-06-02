@@ -89,6 +89,8 @@ When developers build AI applications, they can define specific "tools" that the
 
 When you ask ChatGPT to generate an image, search the web, or run code, it's using tools behind the scenes.
 
+AI models can call tools to extend their capabilities.
+
 Here's what happens under the hood:  
 
 1. The AI model receives your request and recognizes it needs additional capabilities
