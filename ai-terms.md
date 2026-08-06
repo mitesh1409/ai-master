@@ -204,7 +204,8 @@ Most AI models now are moving to self-supervised learning.
 
 ## #6 Transformer
 
-Transformer X LLM
+Transformer X LLM  
+Transformer is NOT LLM.  
 
 LLM predicts the next token for the given input sequence.  
 Transformer does the same thing but it is a specific algorithm or a specific method by which  
