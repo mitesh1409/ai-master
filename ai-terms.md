@@ -253,15 +253,18 @@ Here are two practical examples showing how it works:
 
 ### Example 1: Standardizing Technical Error Log Analysis
 
-Imagine you are building a tool to parse ugly system crashes into a clean, structured JSON format for your team's tracking system.
+Imagine you are building a tool to parse ugly system crashes into a clean, structured JSON format  
+for your team's tracking system.
 
 **The Few-Shot Prompt:**
 
 ```text
-You are a system monitoring assistant. Convert raw server error logs into a clean JSON format following these exact examples.
+You are a system monitoring assistant. Convert raw server error logs into a clean JSON format 
+following these exact examples.
 
 ### Example 1
 Input log: [2026-07-19 14:22:01] ERROR auth_service.js line 42: Connection timed out to DB cluster-primary-01 after 5000ms.
+
 Output JSON:
 {
   "service": "authentication",
@@ -272,6 +275,7 @@ Output JSON:
 
 ### Example 2
 Input log: [2026-07-19 14:25:30] WARN file_store.go line 118: Disk space utilization at 87% on /dev/sdb3.
+
 Output JSON:
 {
   "service": "storage",
@@ -282,8 +286,8 @@ Output JSON:
 
 ### Now do this one:
 Input log: [2026-07-19 15:02:12] ERROR payment_gateway.py line 89: Failed to post payload to external vendor API stripe_v3, server returned 502 Bad Gateway.
-Output JSON:
 
+What will be the "Output JSON"?
 ```
 
 **Why it works:** Instead of trying to write a complex rule like *"If the log says payment_gateway, set service to billing or payment, and map vendor strings to target_resource,"* you simply show the model two clean examples. The model picks up on the pattern, mapping `payment_gateway.py` to a `"payment"` service and extracting `stripe_v3` perfectly.
@@ -292,15 +296,19 @@ Output JSON:
 
 ### Example 2: Adhering to a Strict "Brand Voice" and Format
 
-Suppose you need an LLM to generate release notes or feature updates for a product, but it *must* follow a very specific micro-format: a punchy headline, a one-sentence user benefit, and a technical detail tag.
+Suppose you need an LLM to generate release notes or feature updates for a product,  
+but it *must* follow a very specific micro-format: a punchy headline, a one-sentence user benefit,  
+and a technical detail tag.
 
 **The Few-Shot Prompt:**
 
 ```text
-Write a short product update notification for the user dashboard based on the raw feature description provided. Follow the exact style, tone, and format of the examples below.
+Write a short product update notification for the user dashboard based on the raw feature description provided.
+Follow the exact style, tone, and format of the examples below.
 
 ### Example 1
 Raw feature: We added a dark mode toggle to the user profile settings page because people kept asking for it for night coding.
+
 Update:
 🚀 **Night Owls Rejoice: Dark Mode is Live!**
 You can now ease eye strain during late-night coding sessions by toggling the new Dark Mode directly from your Profile Settings.
@@ -308,6 +316,7 @@ You can now ease eye strain during late-night coding sessions by toggling the ne
 
 ### Example 2
 Raw feature: The database migration team optimized the primary keys on the transaction history table, cutting read query time from 1.2s to 150ms.
+
 Update:
 ⚡ **Snappy History: 8x Faster Transaction Loads**
 Review your past payments without the wait, thanks to a deep database indexing overhaul that slashes load times to milliseconds.
@@ -316,7 +325,6 @@ Review your past payments without the wait, thanks to a deep database indexing o
 ### Now do this one:
 Raw feature: We added support for local file encryption using AES-256 for all files uploaded to the MyDrive dashboard so it's safer.
 Update:
-
 ```
 
 **Why it works:** Writing instructions like *"Be punchy, use an emoji at the start, use bolding for the title, keep the body to one sentence, and put a tag at the bottom"* often yields mixed results. By feeding the model concrete "shots," it instantly mirrors the exact cadence, formatting, and marketing-to-technical balance you want.
