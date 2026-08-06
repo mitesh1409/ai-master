@@ -375,11 +375,13 @@ to fetch real-time data from external servers or databases securely and execute 
 ## #12 Context Engineering
 
 Context Engineering is an encapsulation of:  
+
 * Few-Shot Prompting OR Example in Prompt
 * RAG (Retrieval Augmented Generation)
 * MCP (Model Context Protocol)
 
 Two new challenges in this:  
+
 1. User Preferences
 2. Context Summarization
 
