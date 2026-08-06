@@ -424,3 +424,8 @@ The quality of this response is usually much higher than a direct response.
 LLM breaks the problem (input) into multiple steps.  
 If the problem is hard then it may have more steps,  
 and if the problem is easy then it may have less steps.  
+
+---
+
+## #16 Reasoning Model
+
