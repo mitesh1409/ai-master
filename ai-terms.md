@@ -87,10 +87,10 @@ Once they know the meaning, they can construct sentences effectively.
 Lets take the following example:  
 
 * "Tasty Apple" - you are probably talking about Apple fruit
-* "Apple's Revenue" - you are probably talking about Apple company
+* "Apple's Revenue" - you are probably talking about Apple company's revenue
 * "The apple of my eye" - you are probably talking about a young person who you have affection for
 
-So here we have the same word "Apple" but it has different meaning.  
+So here we have the same word "Apple" but it has different meaning in different context.  
 
 Only way to understand the meaning is not by looking at the word itself,  
 but by looking at nearby/surrounding words, they add context to the meaning of "Apple".  
@@ -172,6 +172,7 @@ Instead Self-Supervised Learning has made getting test data much cheapter here.
 Here if you have "Et tu Brutus.",  
 then the model is going to be fed in this text  
 and it is going to make 3 predictions:  
+
 1. "Et" - What comes after "Et"?
 1. "Et tu" - What comes after "Et tu"?
 1. "Et tu Brutus." - What comes after "Et tu Brutus."?
