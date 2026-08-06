@@ -231,6 +231,11 @@ Internal weights of the model are updated and that way model will learn a partic
 
 This is like specializing in a domain.  
 
+Analogy  
+Up to 10th every student studies the same.  
+After that students have choice to choose from "Arts", "Commerce" or "Science" stream.  
+Then again after 12th they have more choices of courses to specialize in their domain of interest.  
+
 ---
 
 ## #8 Few-Shot Prompting OR Example in Prompt
