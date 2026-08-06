@@ -240,9 +240,12 @@ Then again after 12th they have more choices of courses to specialize in their d
 
 ## #8 Few-Shot Prompting OR Example in Prompt
 
-Think of **Few-Shot Prompting** like showing a new assistant a few filled-out forms before asking them to fill out a new one. Instead of just describing what you want through instructions, you provide explicit **input -> output pairs** directly inside your prompt.
+Think of **Few-Shot Prompting** like showing a new assistant a few filled-out forms before asking them  
+to fill out a new one. Instead of just describing what you want through instructions, you provide explicit  
+**input -> output pairs or examples** directly inside your prompt.
 
-This is incredibly useful when you want a highly specific format, a particular tone, or a precise logical structure that is hard to explain with text instructions alone.
+This is incredibly useful when you want a highly specific format, a particular tone,  
+or a precise logical structure that is hard to explain with text instructions alone.
 
 Here are two practical examples showing how it works:
 
