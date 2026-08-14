@@ -1,5 +1,7 @@
 # AI Terms
 
+[20 AI Concepts Explained in 40 Minutes](https://www.youtube.com/watch?v=OYvlznJ4IZQ)
+
 **Index**  
 
 1. LLM (Large Language Model)
@@ -348,6 +350,17 @@ Augmented - Augment the query
 
 Generation - Generate the response  
 
+```
+                            Vector DB
+                            (Company Policy, 
+                            Terms and Conditions, 
+                            HR Policies etc.)
+                                +
+Customer ----> Server ----> Input Query               ----> LLM ----> Output Response
+                                +
+                            Few-Shot/Example Prompting
+```
+
 ---
 
 ## #10 Vector DB
@@ -428,4 +441,46 @@ and if the problem is easy then it may have less steps.
 ---
 
 ## #16 Reasoning Model
+
+Given a problem - a model that can reason, a model that can figure out,  
+how to solve that problem step by step is a reasoning model.  
+
+They are also known as LRMs (Large Reasoning Models).  
+
+Examples are - DeepSeek, OpenAI O series models etc.  
+
+---
+
+## #17 Multi-Modal Models
+
+Most LLMs operate on "Text" data.  
+
+But now LLMs can operate on Text, Audio, Video, Image etc. type of data.  
+Such models are called Multi-Modal Models.  
+
+Multi-Modal in general means any kind of mode (Text, Audio, Video, Image etc).  
+
+They have a deeper understanding of the meaning of objects.  
+
+---
+
+## #18 Small Language Models
+
+SLMs have fewer parameters than the LLMs.  
+
+SLMs are trained on less amount of data - company or task specific.  
+
+SLMs are trained by companies on their specific data or proprietary data,  
+to come up with reasonably good responses for specific use cases.  
+
+---
+
+## #19 Distillation
+
+The process of building SLMs is usually Distillation.  
+
+---
+
+## #20 Quantization
+
 
